@@ -62,7 +62,8 @@
     【5】　取消暂存: git rm --cached <文件>... 
          e.g. git rm file1 file2
               git rm *
-        
+              git rm -r --cached day6/
+
 
         　　　　
      　
