@@ -1,0 +1,78 @@
+一、关于GIT
+
+1.什么是git : 是一个开源的分布式版本控制系统，用于高效的管理大小项目和文件。
+2.什么是代码管理工具
+   * 做代码的备份，防止丢失
+   * 代码的版本控制
+   * 方便项目的管理　　
+   * 多人协同工作
+3.git 的特点
+　　* git 是开源的，多在*nix下使用，可以管理各种文件
+   * git 是分布式管理工具，(svn是集中式)
+   * git 安全性强，适用于开源项目开发，分享速度快
+   * git 拥有更好的分支支持，方便多人协同
+
+4.git 安装　
+　　　sudo apt-get install git 
+
+二、git 的使用
+　　1.基本概念
+　　　【1】 工作区workspace: 项目文件的所在目录，用于项目的操作空间
+　　　【2】 暂存区index: 用于记录工作区的修改工作内容，
+　　　【3】 仓库区: 用于将记录的工作内容备份
+　　　【4】 远程仓库: 远程机子上的git仓库区
+　 2.git的初始化设置
+　　　命令: git config 
+     【1】 配置系统所有用户: git config --system [内容]
+     　　　配置文件: /etc/gitconfig
+             sudo 获取权限
+     【2】 配置当前用户: git config --global [内容]
+     　　　配置文件: ~/.gitconfig
+             
+     【3】配置当前项目: git config  [内容]
+     　　　配置文件: 项目目录/.git/config
+     　　* 要求必须在git 项目目录下执行
+     
+     *配置用户名 
+       sudo git config --system user.name Tedu
+       
+     *配置邮箱
+     　git config --global user.email lvze_work@126.com
+     　　　　　　　　　　　　　　　　　　　　258648325@qq.com
+
+　　　    项目目录初始化: git init
+　　　*配置
+　　　　　git config core.editor vscode
+　　　*查看当前项目配置
+　　　　　git config --list
+
+　3.git 基本操作
+　　　【1】查看命令帮助: git help [command]
+          q 退出
+     【2】初始化仓库: git init 
+     　　意义:将某个目录变成git操作目录，生成git仓库，该目录即可使用git 管理　
+     【3】 查看工作分支状态：　git status
+        说明: 干净的　工作区和仓库一致
+        　　　有未跟踪的　工作区内容未提交到暂存区
+        　　　有未同步的　暂存区内容未同步到仓库
+　　　【4】　提交文件到暂存区: git add [files]
+         e.g. git add file1 file2
+              git add *
+
+    【5】　取消暂存: git rm --cached <文件>... 
+         e.g. git rm file1 file2
+              git rm *
+        
+
+        　　　　
+     　
+
+
+
+ 
+
+
+
+
+
+     　  　        
