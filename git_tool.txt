@@ -104,6 +104,14 @@
      
      【7】删除标签: git tag -d [tag]
 
+ 5. 临时工作区    
+ 　　　【1】 创建临时工作区　git stash
+        意义:将 
+      【2】　查看工作区　git stash list
+        
+      【3】 应用某个工作区　git stash apply [stash]
+        
+
 
 　　
         　　　　
