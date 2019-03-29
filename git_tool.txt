@@ -107,12 +107,40 @@
  5. 临时工作区    
  　　　【1】 创建临时工作区　git stash
         意义:将 
-      【2】　查看工作区　git stash list
+      【2】　查看临时工作区　git stash list
         
-      【3】 应用某个工作区　git stash apply [stash]
-        
+      【3】 应用某个临时工作区　git stash apply [stash_name]
+
+      【4】 删除临时工作区git stash drop stash@{1}
+           
+           　　　　　　　git stash clear 
 
 
+6.分支管理
+　　1. 什么是分支　分支即每个人在原有代码基础上建立的自己的工作环境，单独开发，不会干扰到其它分支操作。
+　　　　　完成开发后，再统一合并为一个主题
+　　2. 建立分支的优点，安全不影响其他分支，独立控制速度
+　　
+　　3.分支操作命令
+　　　【1】查看分支情况　git branch
+     【2】创建新的分支　git branch [branch_name]
+     注意　基于某个分支创建新分支时，原分支最好是干净状态的
+     【3】切换工作分支: git chechout [branch_name]
+        git checkout -b [branch_name] 创建并切换分支
+     【4】合并分支git merge [branch] 在父分支上操作
+         注意　合并分支过程中产生冲突需要自己解决 
+              在分支操作中尽量不要修改原有内容
+
+     【5】删除分支　git branch -d [branch_name]
+         注意　: 没有被合并的分支只能使用－D强制删除
+
+课后作业: 1.git 命令　练习
+　　　　　2.登录　github.com 网站注册一个账号         
+                  
+
+        
+
+　　　
 　　
         　　　　
      　
