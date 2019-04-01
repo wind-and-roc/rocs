@@ -1,0 +1,21 @@
+复习
+1.什么是代码管理工具，什么是git
+
+2.git 安装配置
+
+3.git的仓库结构和基本命令
+　init  add(mv rm)  commit
+log  status  reflog  diff  
+checkout
+
+4.git 的版本管理
+git reset --hard 
+git tag
+
+5.git 临时工作区
+git stash
+
+6.git 的分支管理
+git branch 
+git checkout
+git merge
